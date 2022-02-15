@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+}
+
+.student-form {
+	flex: 1;
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.student-form__heading {
+	text-align: center;
+	padding: 0 0 20px 0;
+	font-size: 2rem;
+}
+.student-form__input {
+	margin-bottom: 15px;
+}
+
+.student-form__input input {
+	float: right;
+	width: 70%;
+	padding: 2px;
+}
+
+.student-form__radio {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.student-form__radio label {
+	float: left;
+}
+
+.student-form__radio input {
+	margin: 5px 55px 0 5px;
+}
+.student-form__btn {
+	text-align: center;
+	margin-top: 15px;
+}
+.student-form__btn button {
+	padding: 10px;
+	border: 1ps solid black;
+	border-radius: 5px;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.student-list {
+	flex: 2;
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.student-list h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 2rem;
+}
+
+.student-list table {
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.student-list table td,
+.student-list table th {
+	text-align: center;
+	border: 1px solid black;
+}
+
+.error {
+	margin: 15px 0 0 105px;
+	text-align: center;
+	color: red;
+}

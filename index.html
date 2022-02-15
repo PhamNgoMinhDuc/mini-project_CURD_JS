@@ -1,0 +1,48 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CURD with JS</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body onload="renderListStudents()">
+		<div class="student-form">
+			<div class="student-form__heading">Thông tin sinh viên</div>
+			<div class="student-form__input">
+				<label for="">Họ và tên:</label>
+				<input type="text" id="fullName" value="" />
+				<div class="error" id="err-fullname"></div>
+			</div>
+			<div class="student-form__input">
+				<label for="">Email:</label>
+				<input type="email" id="email" />
+				<div class="error" id="err-email"></div>
+			</div>
+			<div class="student-form__input">
+				<label for="">Số điện thoại:</label>
+				<input type="number" id="phone" />
+				<div class="error" id="err-phone"></div>
+			</div>
+			<div class="student-form__input">
+				<label for="">Địa chỉ:</label>
+				<input type="text" id="address" />
+				<div class="error" id="err-address"></div>
+			</div>
+			<div class="student-form__radio">
+				<label for="">Giới tính:</label>
+				Nam<input type="radio" id="male" name="gender" value="1" /> Nữ<input type="radio" id="female" name="gender" value="0" />
+				<div class="error" id="err-gender"></div>
+			</div>
+			<div class="student-form__btn">
+				<button onclick="save()">Lưu lại</button>
+			</div>
+		</div>
+
+		<div class="student-list" id="students-grid">
+			<h2>Danh sách sinh viên</h2>
+			<table id="students-view"></table>
+		</div>
+	</body>
+	<script src="./js/app.js"></script>
+</html>
